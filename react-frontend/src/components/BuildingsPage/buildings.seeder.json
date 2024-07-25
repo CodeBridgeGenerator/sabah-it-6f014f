@@ -1,0 +1,52 @@
+[
+    {
+        "buildingname": "Cedar Ridge Apartments",
+        "address": "123 Maple Street, Springfield, MA",
+        "buidlingtype": "Residential"
+    },
+    {
+        "buildingname": "Phoenix Tower",
+        "address": "456 Oak Avenue, Riverside, CA",
+        "buidlingtype": "Office"
+    },
+    {
+        "buildingname": "Willow Court Condominiums",
+        "address": "789 Elm Drive, Austin, TX",
+        "buidlingtype": "Residential"
+    },
+    {
+        "buildingname": "Liberty Plaza",
+        "address": "101 Pine Street, Seattle, WA",
+        "buidlingtype": "Mixed-Use"
+    },
+    {
+        "buildingname": "Summit Corporate Center",
+        "address": "234 Birch Lane, Denver, CO",
+        "buidlingtype": "Office"
+    },
+    {
+        "buildingname": "Parkside Residences",
+        "address": "567 Chestnut Road, Orlando, FL",
+        "buidlingtype": "Residential"
+    },
+    {
+        "buildingname": "Harbor View Tower",
+        "address": "890 Walnut Street, San Francisco, CA",
+        "buidlingtype": "Residential"
+    },
+    {
+        "buildingname": "Lakeside Business Park",
+        "address": "111 Pinecrest Avenue, Chicago, IL",
+        "buidlingtype": "Office"
+    },
+    {
+        "buildingname": "Cascade Lofts",
+        "address": "222 Aspen Court, Portland, OR",
+        "buidlingtype": "Residential"
+    },
+    {
+        "buildingname": "Central Plaza",
+        "address": "333 Cedar Lane, New York, NY",
+        "buidlingtype": "Mixed-Use"
+    }
+]

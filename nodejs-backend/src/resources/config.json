@@ -1,0 +1,2623 @@
+{
+  "projectName": "sabah-it",
+  "description": null,
+  "auth": "jwt",
+  "database": {
+    "pathToLogo": {
+      "s": "/assets/applications_logos/mongodb-s.png",
+      "l": "/assets/applications_logos/mongodb.png"
+    },
+    "appName": "mongodb-database",
+    "disabled": false,
+    "type": "database",
+    "name": "mongodb",
+    "label": "MongoDB",
+    "isOpenSource": true,
+    "databaseType": "mongodb"
+  },
+  "stack": [
+    {
+      "appName": "nodejs-backend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/nodejs-s.png",
+        "l": "/assets/applications_logos/nodejs.png"
+      },
+      "type": "backend",
+      "name": "nodejs",
+      "label": "Node.js Express Feathers.js"
+    },
+    {
+      "appName": "react-frontend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/react-s.png",
+        "l": "/assets/applications_logos/react.png"
+      },
+      "type": "frontend",
+      "name": "react",
+      "label": "React JavaScript"
+    },
+    {
+      "appName": "flutter-dart",
+      "pathToLogo": {
+        "s": "/assets/applications_logos/android-ios-flutter-s.png",
+        "l": "/assets/applications_logos/android-ios-flutter.png"
+      },
+      "type": "device",
+      "name": "flutter-ios-android",
+      "label": "iOS & Android Mobile",
+      "environments": []
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "users",
+      "databaseName": "users",
+      "displayName": "Users",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Name",
+          "min": 2,
+          "max": 100,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "email",
+          "type": "String",
+          "unique": true,
+          "lowercase": true,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Email",
+          "min": 5,
+          "max": 150,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "password",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": false,
+          "displayOnSingle": false,
+          "displayOnDataTable": false,
+          "creatable": true,
+          "editable": false,
+          "sortable": false,
+          "required": true,
+          "component": "p",
+          "label": "Password",
+          "min": 5,
+          "max": 300,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": true,
+      "seeder": [],
+      "skip": true,
+      "downloadable": true,
+      "uploadable": false,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "buildings",
+      "databaseName": "buildings",
+      "displayName": "Buildings",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "buildingname",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Buildingname",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01ae"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "address",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Address",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01af"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "buidlingtype",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Buidlingtype",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b0"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "buildingname": "Cedar Ridge Apartments",
+          "address": "123 Maple Street, Springfield, MA",
+          "buidlingtype": "Residential"
+        },
+        {
+          "buildingname": "Phoenix Tower",
+          "address": "456 Oak Avenue, Riverside, CA",
+          "buidlingtype": "Office"
+        },
+        {
+          "buildingname": "Willow Court Condominiums",
+          "address": "789 Elm Drive, Austin, TX",
+          "buidlingtype": "Residential"
+        },
+        {
+          "buildingname": "Liberty Plaza",
+          "address": "101 Pine Street, Seattle, WA",
+          "buidlingtype": "Mixed-Use"
+        },
+        {
+          "buildingname": "Summit Corporate Center",
+          "address": "234 Birch Lane, Denver, CO",
+          "buidlingtype": "Office"
+        },
+        {
+          "buildingname": "Parkside Residences",
+          "address": "567 Chestnut Road, Orlando, FL",
+          "buidlingtype": "Residential"
+        },
+        {
+          "buildingname": "Harbor View Tower",
+          "address": "890 Walnut Street, San Francisco, CA",
+          "buidlingtype": "Residential"
+        },
+        {
+          "buildingname": "Lakeside Business Park",
+          "address": "111 Pinecrest Avenue, Chicago, IL",
+          "buidlingtype": "Office"
+        },
+        {
+          "buildingname": "Cascade Lofts",
+          "address": "222 Aspen Court, Portland, OR",
+          "buidlingtype": "Residential"
+        },
+        {
+          "buildingname": "Central Plaza",
+          "address": "333 Cedar Lane, New York, NY",
+          "buidlingtype": "Mixed-Use"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "maintenanceRequests",
+      "databaseName": "maintenance_requests",
+      "displayName": "Maintenance Requests",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "buildingid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Buildingid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b2"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "maintenancereport",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Maintenancereport",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b3"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "category",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Category",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b4"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "priority",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Priority",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b5"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "buildingid": "Cedar Ridge Apartments",
+          "maintenancereport": "Plumbing",
+          "category": "High",
+          "priority": "In Progress"
+        },
+        {
+          "buildingid": "Phoenix Tower",
+          "maintenancereport": "HVAC",
+          "category": "Medium",
+          "priority": "Pending"
+        },
+        {
+          "buildingid": "Willow Court Condominiums",
+          "maintenancereport": "Electrical",
+          "category": "Low",
+          "priority": "Completed"
+        },
+        {
+          "buildingid": "Liberty Plaza",
+          "maintenancereport": "Roofing",
+          "category": "High",
+          "priority": "Open"
+        },
+        {
+          "buildingid": "Summit Corporate Center",
+          "maintenancereport": "Elevator",
+          "category": "High",
+          "priority": "In Progress"
+        },
+        {
+          "buildingid": "Parkside Residences",
+          "maintenancereport": "Plumbing",
+          "category": "Medium",
+          "priority": "Pending"
+        },
+        {
+          "buildingid": "Harbor View Tower",
+          "maintenancereport": "HVAC",
+          "category": "Low",
+          "priority": "Completed"
+        },
+        {
+          "buildingid": "Lakeside Business Park",
+          "maintenancereport": "Electrical",
+          "category": "High",
+          "priority": "Open"
+        },
+        {
+          "buildingid": "Cascade Lofts",
+          "maintenancereport": "Roofing",
+          "category": "Medium",
+          "priority": "In Progress"
+        },
+        {
+          "buildingid": "Central Plaza",
+          "maintenancereport": "Elevator",
+          "category": "High",
+          "priority": "Pending"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "personal",
+      "databaseName": "personal",
+      "displayName": "Personal",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b385228a5c67ef6f01b7"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "employeeid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Employeeid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01b8"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "dob",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Dob",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01b9"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "gender",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Gender",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01ba"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "phone",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Phone",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01bb"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "email",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Email",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01bc"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "address",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Address",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01bd"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "employment",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Employment",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01be"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "hire",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Hire",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01bf"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "terminationdate",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Terminationdate",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c0"
+          },
+          "min": 1,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "title",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Title",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c1"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "department",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Department",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c2"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "name": "John Doe",
+          "employeeid": "E123456",
+          "dob": 31243,
+          "gender": "Male",
+          "phone": "+1 123 456 7890",
+          "email": "john.doe@example.com",
+          "address": "123 Main Street, Springfield, MA",
+          "employment": "Active",
+          "hire": 44972,
+          "terminationdate": "-",
+          "title": "Maintenance Technician",
+          "department": "Facilities Management"
+        },
+        {
+          "name": "Jane Smith",
+          "employeeid": "E234567",
+          "dob": 32983,
+          "gender": "Female",
+          "phone": "+1 234 567 8901",
+          "email": "jane.smith@example.com",
+          "address": "456 Elm Avenue, Riverside, CA",
+          "employment": "Active",
+          "hire": 44814,
+          "terminationdate": "-",
+          "title": "Project Manager",
+          "department": "Operations"
+        },
+        {
+          "name": "Michael Johnson",
+          "employeeid": "E345678",
+          "dob": 32477,
+          "gender": "Male",
+          "phone": "+1 345 678 9012",
+          "email": "michael.johnson@example.com",
+          "address": "789 Oak Drive, Austin, TX",
+          "employment": "Inactive",
+          "hire": 44336,
+          "terminationdate": 44941,
+          "title": "Senior Developer",
+          "department": "IT"
+        },
+        {
+          "name": "Emily Williams",
+          "employeeid": "E456789",
+          "dob": 34783,
+          "gender": "Female",
+          "phone": "+1 456 789 0123",
+          "email": "emily.williams@example.com",
+          "address": "101 Pine Street, Seattle, WA",
+          "employment": "Active",
+          "hire": 45143,
+          "terminationdate": "-",
+          "title": "Sales Manager",
+          "department": "Sales"
+        },
+        {
+          "name": "David Brown",
+          "employeeid": "E567890",
+          "dob": 30571,
+          "gender": "Male",
+          "phone": "+1 567 890 1234",
+          "email": "david.brown@example.com",
+          "address": "234 Birch Lane, Denver, CO",
+          "employment": "Active",
+          "hire": 44883,
+          "terminationdate": "-",
+          "title": "Financial Analyst",
+          "department": "Finance"
+        },
+        {
+          "name": "Sarah Miller",
+          "employeeid": "E678901",
+          "dob": 33397,
+          "gender": "Female",
+          "phone": "+1 678 901 2345",
+          "email": "sarah.miller@example.com",
+          "address": "567 Chestnut Road, Orlando, FL",
+          "employment": "Active",
+          "hire": 44560,
+          "terminationdate": "-",
+          "title": "Marketing Specialist",
+          "department": "Marketing"
+        },
+        {
+          "name": "Robert Wilson",
+          "employeeid": "E789012",
+          "dob": 31782,
+          "gender": "Male",
+          "phone": "+1 789 012 3456",
+          "email": "robert.wilson@example.com",
+          "address": "890 Walnut Street, San Francisco, CA",
+          "employment": "Active",
+          "hire": 44645,
+          "terminationdate": "-",
+          "title": "Operations Manager",
+          "department": "Operations"
+        },
+        {
+          "name": "Elizabeth Taylor",
+          "employeeid": "E890123",
+          "dob": 34199,
+          "gender": "Female",
+          "phone": "+1 890 123 4567",
+          "email": "elizabeth.taylor@example.com",
+          "address": "111 Pinecrest Avenue, Chicago, IL",
+          "employment": "Active",
+          "hire": 44936,
+          "terminationdate": "-",
+          "title": "HR Specialist",
+          "department": "Human Resources"
+        },
+        {
+          "name": "Matthew Anderson",
+          "employeeid": "E901234",
+          "dob": 32843,
+          "gender": "Male",
+          "phone": "+1 901 234 5678",
+          "email": "matthew.anderson@example.com",
+          "address": "222 Aspen Court, Portland, OR",
+          "employment": "Active",
+          "hire": 44727,
+          "terminationdate": "-",
+          "title": "Customer Support Specialist",
+          "department": "Customer Support"
+        },
+        {
+          "name": "Jennifer Martinez",
+          "employeeid": "E012345",
+          "dob": 34464,
+          "gender": "Female",
+          "phone": "+1 012 345 6789",
+          "email": "jennifer.martinez@example.com",
+          "address": "333 Cedar Lane, New York, NY",
+          "employment": "Active",
+          "hire": 45036,
+          "terminationdate": "-",
+          "title": "Legal Counsel",
+          "department": "Legal"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "workOrders",
+      "databaseName": "work_orders",
+      "displayName": "Work Orders",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "requestid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Requestid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c4"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "assignedtouserid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Assignedtouserid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c5"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "startdate",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Startdate",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c6"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "enddate",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Enddate",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c7"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "status",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Status",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c8"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "notes",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Notes",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01c9"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "requestid": "R123456",
+          "assignedtouserid": "E234567",
+          "startdate": 45122,
+          "enddate": 45125,
+          "status": "In Progress",
+          "notes": "Plumbing issue in restroom"
+        },
+        {
+          "requestid": "R234567",
+          "assignedtouserid": "E456789",
+          "startdate": 45097,
+          "enddate": 45099,
+          "status": "Completed",
+          "notes": "HVAC maintenance in main office"
+        },
+        {
+          "requestid": "R345678",
+          "assignedtouserid": "E567890",
+          "startdate": 45143,
+          "enddate": 45145,
+          "status": "Pending",
+          "notes": "Electrical inspection required"
+        },
+        {
+          "requestid": "R456789",
+          "assignedtouserid": "E678901",
+          "startdate": 45179,
+          "enddate": 45181,
+          "status": "In Progress",
+          "notes": "Roof repair on top floor"
+        },
+        {
+          "requestid": "R567890",
+          "assignedtouserid": "E789012",
+          "startdate": 45163,
+          "enddate": 45165,
+          "status": "Completed",
+          "notes": "Elevator maintenance scheduled"
+        },
+        {
+          "requestid": "R678901",
+          "assignedtouserid": "E890123",
+          "startdate": 45108,
+          "enddate": 45110,
+          "status": "Pending",
+          "notes": "Plumbing leak reported"
+        },
+        {
+          "requestid": "R789012",
+          "assignedtouserid": "E901234",
+          "startdate": 45184,
+          "enddate": 45187,
+          "status": "In Progress",
+          "notes": "HVAC system upgrade underway"
+        },
+        {
+          "requestid": "R890123",
+          "assignedtouserid": "E012345",
+          "startdate": 45148,
+          "enddate": 45150,
+          "status": "Completed",
+          "notes": "Electrical panel replacement"
+        },
+        {
+          "requestid": "R901234",
+          "assignedtouserid": "E123456",
+          "startdate": 45082,
+          "enddate": 45085,
+          "status": "Pending",
+          "notes": "Roof inspection needed"
+        },
+        {
+          "requestid": "R012345",
+          "assignedtouserid": "E234567",
+          "startdate": 45189,
+          "enddate": 45191,
+          "status": "Completed",
+          "notes": "Elevator malfunction fixed"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "maintenanceHistory",
+      "databaseName": "maintenance_history",
+      "displayName": "Maintenance History",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "buildingid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Buildingid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01cb"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "requestid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Requestid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01cc"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "description",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Description",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01cd"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "dateperformed",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Dateperformed",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01ce"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "performedbyuserid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Performedbyuserid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01cf"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "buildingid": "B123456",
+          "requestid": "R123456",
+          "description": "Fixed leaky faucet in Apartment 101",
+          "dateperformed": 45125,
+          "performedbyuserid": "E234567"
+        },
+        {
+          "buildingid": "B234567",
+          "requestid": "R234567",
+          "description": "Replaced HVAC filter",
+          "dateperformed": 45099,
+          "performedbyuserid": "E456789"
+        },
+        {
+          "buildingid": "B345678",
+          "requestid": "R345678",
+          "description": "Inspected electrical wiring",
+          "dateperformed": 45145,
+          "performedbyuserid": "E567890"
+        },
+        {
+          "buildingid": "B456789",
+          "requestid": "R456789",
+          "description": "Patched roof membrane",
+          "dateperformed": 45181,
+          "performedbyuserid": "E678901"
+        },
+        {
+          "buildingid": "B567890",
+          "requestid": "R567890",
+          "description": "Serviced elevator motor",
+          "dateperformed": 45165,
+          "performedbyuserid": "E789012"
+        },
+        {
+          "buildingid": "B678901",
+          "requestid": "R678901",
+          "description": "Cleared clogged drain",
+          "dateperformed": 45110,
+          "performedbyuserid": "E890123"
+        },
+        {
+          "buildingid": "B789012",
+          "requestid": "R789012",
+          "description": "Installed new HVAC unit",
+          "dateperformed": 45187,
+          "performedbyuserid": "E901234"
+        },
+        {
+          "buildingid": "B890123",
+          "requestid": "R890123",
+          "description": "Upgraded electrical panel",
+          "dateperformed": 45150,
+          "performedbyuserid": "E012345"
+        },
+        {
+          "buildingid": "B901234",
+          "requestid": "R901234",
+          "description": "Conducted roof inspection",
+          "dateperformed": 45085,
+          "performedbyuserid": "E123456"
+        },
+        {
+          "buildingid": "B012345",
+          "requestid": "R012345",
+          "description": "Repaired elevator control panel",
+          "dateperformed": 45191,
+          "performedbyuserid": "E234567"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "inventory",
+      "databaseName": "inventory",
+      "displayName": "Inventory",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "itemid",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Itemid",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d1"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "itemname",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Itemname",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d2"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "category",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Category",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d3"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "unitofmeasure",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Unitofmeasure",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d4"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "quantityonhand",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Quantityonhand",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d5"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "minimumstocklevel",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Minimumstocklevel",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d6"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "maximumstocklevel",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Maximumstocklevel",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d7"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "reorderpoint",
+          "type": "Date",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_date",
+          "label": "Reorderpoint",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d8"
+          },
+          "min": null,
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "supplier",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Supplier",
+          "faker": {
+            "skip": false,
+            "_id": "66a1b386228a5c67ef6f01d9"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "itemid": "I123456",
+          "itemname": "Light Bulb",
+          "category": "Electrical",
+          "unitofmeasure": "Pieces",
+          "quantityonhand": 500,
+          "minimumstocklevel": 100,
+          "maximumstocklevel": 1000,
+          "reorderpoint": 200,
+          "supplier": "Bright Lamps"
+        },
+        {
+          "itemid": "I234567",
+          "itemname": "Paint",
+          "category": "Maintenance",
+          "unitofmeasure": "Gallons",
+          "quantityonhand": 300,
+          "minimumstocklevel": 50,
+          "maximumstocklevel": 500,
+          "reorderpoint": 100,
+          "supplier": "Colors Inc."
+        },
+        {
+          "itemid": "I345678",
+          "itemname": "Office Chair",
+          "category": "Furniture",
+          "unitofmeasure": "Units",
+          "quantityonhand": 50,
+          "minimumstocklevel": 10,
+          "maximumstocklevel": 100,
+          "reorderpoint": 20,
+          "supplier": "Comfort Seating"
+        },
+        {
+          "itemid": "I456789",
+          "itemname": "Laptop",
+          "category": "Electronics",
+          "unitofmeasure": "Units",
+          "quantityonhand": 100,
+          "minimumstocklevel": 20,
+          "maximumstocklevel": 200,
+          "reorderpoint": 30,
+          "supplier": "Tech Solutions"
+        },
+        {
+          "itemid": "I567890",
+          "itemname": "Cleaning Supplies",
+          "category": "Janitorial",
+          "unitofmeasure": "Packs",
+          "quantityonhand": 200,
+          "minimumstocklevel": 50,
+          "maximumstocklevel": 500,
+          "reorderpoint": 100,
+          "supplier": "CleanCo"
+        },
+        {
+          "itemid": "I678901",
+          "itemname": "Hammer",
+          "category": "Tools",
+          "unitofmeasure": "Units",
+          "quantityonhand": 50,
+          "minimumstocklevel": 10,
+          "maximumstocklevel": 100,
+          "reorderpoint": 20,
+          "supplier": "Tools R Us"
+        },
+        {
+          "itemid": "I789012",
+          "itemname": "Printer Ink Cartridges",
+          "category": "Office Supplies",
+          "unitofmeasure": "Units",
+          "quantityonhand": 150,
+          "minimumstocklevel": 30,
+          "maximumstocklevel": 300,
+          "reorderpoint": 50,
+          "supplier": "Print Essentials"
+        },
+        {
+          "itemid": "I890123",
+          "itemname": "HVAC Filters",
+          "category": "Maintenance",
+          "unitofmeasure": "Pieces",
+          "quantityonhand": 400,
+          "minimumstocklevel": 100,
+          "maximumstocklevel": 800,
+          "reorderpoint": 150,
+          "supplier": "AirCare Filters"
+        },
+        {
+          "itemid": "I901234",
+          "itemname": "Fire Extinguisher",
+          "category": "Safety",
+          "unitofmeasure": "Units",
+          "quantityonhand": 20,
+          "minimumstocklevel": 5,
+          "maximumstocklevel": 50,
+          "reorderpoint": 10,
+          "supplier": "Fire Safety Inc"
+        },
+        {
+          "itemid": "I012345",
+          "itemname": "Coffee Machine",
+          "category": "Kitchen",
+          "unitofmeasure": "Units",
+          "quantityonhand": 10,
+          "minimumstocklevel": 2,
+          "maximumstocklevel": 20,
+          "reorderpoint": 5,
+          "supplier": "BrewMasters"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    }
+  ]
+}

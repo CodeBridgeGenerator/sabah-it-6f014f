@@ -1,0 +1,62 @@
+[
+    {
+        "buildingid": "Cedar Ridge Apartments",
+        "maintenancereport": "Plumbing",
+        "category": "High",
+        "priority": "In Progress"
+    },
+    {
+        "buildingid": "Phoenix Tower",
+        "maintenancereport": "HVAC",
+        "category": "Medium",
+        "priority": "Pending"
+    },
+    {
+        "buildingid": "Willow Court Condominiums",
+        "maintenancereport": "Electrical",
+        "category": "Low",
+        "priority": "Completed"
+    },
+    {
+        "buildingid": "Liberty Plaza",
+        "maintenancereport": "Roofing",
+        "category": "High",
+        "priority": "Open"
+    },
+    {
+        "buildingid": "Summit Corporate Center",
+        "maintenancereport": "Elevator",
+        "category": "High",
+        "priority": "In Progress"
+    },
+    {
+        "buildingid": "Parkside Residences",
+        "maintenancereport": "Plumbing",
+        "category": "Medium",
+        "priority": "Pending"
+    },
+    {
+        "buildingid": "Harbor View Tower",
+        "maintenancereport": "HVAC",
+        "category": "Low",
+        "priority": "Completed"
+    },
+    {
+        "buildingid": "Lakeside Business Park",
+        "maintenancereport": "Electrical",
+        "category": "High",
+        "priority": "Open"
+    },
+    {
+        "buildingid": "Cascade Lofts",
+        "maintenancereport": "Roofing",
+        "category": "Medium",
+        "priority": "In Progress"
+    },
+    {
+        "buildingid": "Central Plaza",
+        "maintenancereport": "Elevator",
+        "category": "High",
+        "priority": "Pending"
+    }
+]

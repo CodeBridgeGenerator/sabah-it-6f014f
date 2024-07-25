@@ -1,0 +1,72 @@
+[
+    {
+        "buildingid": "B123456",
+        "requestid": "R123456",
+        "description": "Fixed leaky faucet in Apartment 101",
+        "dateperformed": 45125,
+        "performedbyuserid": "E234567"
+    },
+    {
+        "buildingid": "B234567",
+        "requestid": "R234567",
+        "description": "Replaced HVAC filter",
+        "dateperformed": 45099,
+        "performedbyuserid": "E456789"
+    },
+    {
+        "buildingid": "B345678",
+        "requestid": "R345678",
+        "description": "Inspected electrical wiring",
+        "dateperformed": 45145,
+        "performedbyuserid": "E567890"
+    },
+    {
+        "buildingid": "B456789",
+        "requestid": "R456789",
+        "description": "Patched roof membrane",
+        "dateperformed": 45181,
+        "performedbyuserid": "E678901"
+    },
+    {
+        "buildingid": "B567890",
+        "requestid": "R567890",
+        "description": "Serviced elevator motor",
+        "dateperformed": 45165,
+        "performedbyuserid": "E789012"
+    },
+    {
+        "buildingid": "B678901",
+        "requestid": "R678901",
+        "description": "Cleared clogged drain",
+        "dateperformed": 45110,
+        "performedbyuserid": "E890123"
+    },
+    {
+        "buildingid": "B789012",
+        "requestid": "R789012",
+        "description": "Installed new HVAC unit",
+        "dateperformed": 45187,
+        "performedbyuserid": "E901234"
+    },
+    {
+        "buildingid": "B890123",
+        "requestid": "R890123",
+        "description": "Upgraded electrical panel",
+        "dateperformed": 45150,
+        "performedbyuserid": "E012345"
+    },
+    {
+        "buildingid": "B901234",
+        "requestid": "R901234",
+        "description": "Conducted roof inspection",
+        "dateperformed": 45085,
+        "performedbyuserid": "E123456"
+    },
+    {
+        "buildingid": "B012345",
+        "requestid": "R012345",
+        "description": "Repaired elevator control panel",
+        "dateperformed": 45191,
+        "performedbyuserid": "E234567"
+    }
+]

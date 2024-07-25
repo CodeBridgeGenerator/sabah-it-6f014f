@@ -1,0 +1,82 @@
+[
+    {
+        "requestid": "R123456",
+        "assignedtouserid": "E234567",
+        "startdate": 45122,
+        "enddate": 45125,
+        "status": "In Progress",
+        "notes": "Plumbing issue in restroom"
+    },
+    {
+        "requestid": "R234567",
+        "assignedtouserid": "E456789",
+        "startdate": 45097,
+        "enddate": 45099,
+        "status": "Completed",
+        "notes": "HVAC maintenance in main office"
+    },
+    {
+        "requestid": "R345678",
+        "assignedtouserid": "E567890",
+        "startdate": 45143,
+        "enddate": 45145,
+        "status": "Pending",
+        "notes": "Electrical inspection required"
+    },
+    {
+        "requestid": "R456789",
+        "assignedtouserid": "E678901",
+        "startdate": 45179,
+        "enddate": 45181,
+        "status": "In Progress",
+        "notes": "Roof repair on top floor"
+    },
+    {
+        "requestid": "R567890",
+        "assignedtouserid": "E789012",
+        "startdate": 45163,
+        "enddate": 45165,
+        "status": "Completed",
+        "notes": "Elevator maintenance scheduled"
+    },
+    {
+        "requestid": "R678901",
+        "assignedtouserid": "E890123",
+        "startdate": 45108,
+        "enddate": 45110,
+        "status": "Pending",
+        "notes": "Plumbing leak reported"
+    },
+    {
+        "requestid": "R789012",
+        "assignedtouserid": "E901234",
+        "startdate": 45184,
+        "enddate": 45187,
+        "status": "In Progress",
+        "notes": "HVAC system upgrade underway"
+    },
+    {
+        "requestid": "R890123",
+        "assignedtouserid": "E012345",
+        "startdate": 45148,
+        "enddate": 45150,
+        "status": "Completed",
+        "notes": "Electrical panel replacement"
+    },
+    {
+        "requestid": "R901234",
+        "assignedtouserid": "E123456",
+        "startdate": 45082,
+        "enddate": 45085,
+        "status": "Pending",
+        "notes": "Roof inspection needed"
+    },
+    {
+        "requestid": "R012345",
+        "assignedtouserid": "E234567",
+        "startdate": 45189,
+        "enddate": 45191,
+        "status": "Completed",
+        "notes": "Elevator malfunction fixed"
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "itemid": "I123456",
+        "itemname": "Light Bulb",
+        "category": "Electrical",
+        "unitofmeasure": "Pieces",
+        "quantityonhand": 500,
+        "minimumstocklevel": 100,
+        "maximumstocklevel": 1000,
+        "reorderpoint": 200,
+        "supplier": "Bright Lamps"
+    },
+    {
+        "itemid": "I234567",
+        "itemname": "Paint",
+        "category": "Maintenance",
+        "unitofmeasure": "Gallons",
+        "quantityonhand": 300,
+        "minimumstocklevel": 50,
+        "maximumstocklevel": 500,
+        "reorderpoint": 100,
+        "supplier": "Colors Inc."
+    },
+    {
+        "itemid": "I345678",
+        "itemname": "Office Chair",
+        "category": "Furniture",
+        "unitofmeasure": "Units",
+        "quantityonhand": 50,
+        "minimumstocklevel": 10,
+        "maximumstocklevel": 100,
+        "reorderpoint": 20,
+        "supplier": "Comfort Seating"
+    },
+    {
+        "itemid": "I456789",
+        "itemname": "Laptop",
+        "category": "Electronics",
+        "unitofmeasure": "Units",
+        "quantityonhand": 100,
+        "minimumstocklevel": 20,
+        "maximumstocklevel": 200,
+        "reorderpoint": 30,
+        "supplier": "Tech Solutions"
+    },
+    {
+        "itemid": "I567890",
+        "itemname": "Cleaning Supplies",
+        "category": "Janitorial",
+        "unitofmeasure": "Packs",
+        "quantityonhand": 200,
+        "minimumstocklevel": 50,
+        "maximumstocklevel": 500,
+        "reorderpoint": 100,
+        "supplier": "CleanCo"
+    },
+    {
+        "itemid": "I678901",
+        "itemname": "Hammer",
+        "category": "Tools",
+        "unitofmeasure": "Units",
+        "quantityonhand": 50,
+        "minimumstocklevel": 10,
+        "maximumstocklevel": 100,
+        "reorderpoint": 20,
+        "supplier": "Tools R Us"
+    },
+    {
+        "itemid": "I789012",
+        "itemname": "Printer Ink Cartridges",
+        "category": "Office Supplies",
+        "unitofmeasure": "Units",
+        "quantityonhand": 150,
+        "minimumstocklevel": 30,
+        "maximumstocklevel": 300,
+        "reorderpoint": 50,
+        "supplier": "Print Essentials"
+    },
+    {
+        "itemid": "I890123",
+        "itemname": "HVAC Filters",
+        "category": "Maintenance",
+        "unitofmeasure": "Pieces",
+        "quantityonhand": 400,
+        "minimumstocklevel": 100,
+        "maximumstocklevel": 800,
+        "reorderpoint": 150,
+        "supplier": "AirCare Filters"
+    },
+    {
+        "itemid": "I901234",
+        "itemname": "Fire Extinguisher",
+        "category": "Safety",
+        "unitofmeasure": "Units",
+        "quantityonhand": 20,
+        "minimumstocklevel": 5,
+        "maximumstocklevel": 50,
+        "reorderpoint": 10,
+        "supplier": "Fire Safety Inc"
+    },
+    {
+        "itemid": "I012345",
+        "itemname": "Coffee Machine",
+        "category": "Kitchen",
+        "unitofmeasure": "Units",
+        "quantityonhand": 10,
+        "minimumstocklevel": 2,
+        "maximumstocklevel": 20,
+        "reorderpoint": 5,
+        "supplier": "BrewMasters"
+    }
+]
